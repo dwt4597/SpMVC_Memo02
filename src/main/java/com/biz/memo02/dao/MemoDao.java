@@ -11,7 +11,6 @@ import com.biz.memo02.vo.MemoVO;
 
 public interface MemoDao {
 	
-	
 	@Select(MemoSQL.MEMO_SELECT_ALL)
 	public List<MemoVO> selectAll();
 	
@@ -20,15 +19,11 @@ public interface MemoDao {
 	
 	@Insert(MemoSQL.MEMO_INSERT)
 	public int insert(MemoVO vo);
-
+	
 	@Update(MemoSQL.MEMO_UPDATE)
 	public int update(MemoVO vo);
 	
 	@Delete(MemoSQL.MEMO_DELETE)
 	public int delete(long id);
-	
-	
-	
-	
-	
+
 }

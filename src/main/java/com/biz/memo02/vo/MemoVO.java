@@ -1,12 +1,13 @@
 package com.biz.memo02.vo;
 
 public class MemoVO {
+	
 	private long id;
 	private String m_auth;
 	private String m_date;
 	private String m_subject;
 	private String m_text;
-	
+		
 	public MemoVO() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -56,4 +57,5 @@ public class MemoVO {
 	}
 	
 	
+
 }

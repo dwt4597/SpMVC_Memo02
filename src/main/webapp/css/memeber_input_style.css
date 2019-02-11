@@ -17,7 +17,7 @@ label {
 }
 
 /* input tag와 textarea tag에 공통된 스타일을 지정하라 */
-input, textarea {
+input,select,textarea {
 
 	/* label과 나란히 input box를 배치하기 위해서 */
 	display: inline-block;

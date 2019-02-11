@@ -1,4 +1,4 @@
-package com.biz.memo02;
+package com.biz.memo02.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -17,15 +17,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 	
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-	
-		return "home";
+		logger.info("Welcome home! The client locale is {}.", locale);
+		return "redirect:memo_home";
 	}
 	
-	@RequestMapping(value = "write")
-	public String write() {
-		return "memo_write";
-	}
+
+
 }
